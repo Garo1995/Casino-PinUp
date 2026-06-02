@@ -1,0 +1,580 @@
+.application-main{
+    background-image: url("../img/appication-fon.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 613px;
+    padding-top: 105px;
+}
+.application-cnt{
+    padding-right: 75px;
+}
+.application-info{
+    max-width: 570px;
+    width: 100%;
+    padding-top: 86px;
+    position: relative;
+    z-index: 10;
+}
+
+.application-info p{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.application-info .appications {
+    margin-top: 20px;
+}
+
+.application-info .btn{
+    max-width: 225px;
+    width: 100%;
+    margin-top: 21px;
+}
+
+.application-photo{
+    max-width: 577px;
+    width: 100%;
+}
+.application-photo:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(13, 13, 31, 0) 0%, #0D0D1F 100%);
+    height: 156px;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+.margin-blocks{
+    margin-top: 100px;
+}
+
+.benefits-app-wrap{
+    margin-top: 40px;
+    gap: 30px;
+}
+.benefits-app-card{
+    width: calc(33.333333% - 20px);
+    background: rgba(26, 26, 46, 1);
+    border-radius: 16px;
+    height: 222px;
+    position: relative;
+    padding: 20px 25px 24px 34px;
+}
+.benefits-app-card:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-image: url("../img/card-blur.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.benefits-app-name{
+    width: 100%;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+.benefits-app-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(35, 35, 61, 1);
+    border-radius: 8px;
+    max-width: 49px;
+    width: 100%;
+    height: 49px;
+}
+.benefits-app-card p{
+    position: relative;
+    z-index: 2;
+    color: rgba(142, 142, 142, 1);
+}
+
+.instructions-fon:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -350px;
+    background-image: url("../img/instructions-blur.png");
+    max-width: 483px;
+    width: 100%;
+    height: 1122px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.instructions-center{
+    margin-top: 40px;
+    gap: 11px;
+    position: relative;
+    z-index: 2;
+}
+.instructions-click{
+    max-width: 590px;
+    width: 100%;
+    transition: 0.3s;
+    height: 94px;
+    border: 1px solid rgba(239, 239, 239, 0.13);
+    background: rgba(26, 26, 46, 1);
+    border-radius: 16px;
+}
+.instructions-active{
+    border: 1px solid rgba(102, 135, 255, 1);
+}
+.instructions-active svg path{
+    fill: rgba(102, 135, 255, 1);
+}
+.instructions-click svg path{
+    transition: 0.3s;
+}
+
+
+.instructions-click:hover{
+    border: 1px solid rgba(102, 135, 255, 1);
+}
+.instructions-click:hover svg path{
+    fill: rgba(102, 135, 255, 1);
+}
+
+
+.instructions-revers{
+    cursor: pointer;
+    background: rgba(4, 206, 167, 1);
+    border-radius: 16px;
+    max-width: 88px;
+    width: 100%;
+    height: 94px;
+}
+.step-by-step{
+    content: url("../img/step-by-step.svg");
+}
+
+.install-safari{
+    margin-top: 33px;
+    gap: 30px;
+}
+.install-safari-box{
+    border-bottom: 1px solid rgba(32, 38, 77, 1);
+    height: 166px;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+}
+.icon-cheked{
+    content: url("../img/cheked.svg");
+}
+.install-safari-count{
+    padding: 24px 24px 28px;
+}
+.install-safari-count span{
+    color: rgba(102, 135, 255, 0.2);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+.install-safari-pin{
+    position: relative;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    gap: 14px;
+    align-items: center;
+    padding: 10px 15px;
+    background: #FFFFFF1C;
+    border-radius: 8px;
+}
+.icon-search{
+    content: url("../img/search.svg");
+    width: 22px;
+}
+.install-safari-pin span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+}
+.install-safari-pin:after, .install-safari-store:after, .install-get:after, .launch-open:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 95px;
+    background-image: url("../img/slaq.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+}
+.install-safari-store{
+    width: 100%;
+    position: relative;
+}
+
+.install-safari-store:after{
+    bottom: -34px;
+    left: 90px;
+}
+
+.install-get, .launch-open{
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.11);
+    width: 159px;
+    height: 45px;
+    border-radius: 23px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(102, 135, 255, 1);
+    position: relative;
+}
+.install-get:after{
+    bottom: -19px;
+    right: 4px;
+    left: auto;
+}
+.launch-open{
+    background: rgba(255, 255, 255, 1);
+    color: rgba(102, 135, 255, 1);
+}
+.launch-open:after{
+    bottom: -22px;
+    left: 67px;
+}
+
+
+
+
+
+
+
+
+
+
+.faq-main:before{
+    content: "";
+    position: absolute;
+    top: -385px;
+    right: 1%;
+    background-image: url("../img/faq-blur.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1273px;
+    max-width: 1121px;
+    width: 100%;
+}
+
+.accordion{
+    margin-top: 40px;
+    gap: 9px;
+    position: relative;
+    z-index: 2;
+}
+
+.accordion-box{
+    width: 100%;
+    background: rgba(26, 26, 46, 1);
+    border-radius: 10px;
+}
+.accordion-click{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 21px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.accordion-click span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(193, 193, 193, 1);
+}
+.accordion-click h4{
+    transition: 0.3s;
+    min-width: 320px;
+}
+.open h4{
+    color: rgba(4, 206, 167, 1);
+}
+.accordion-plus{
+    transition: 0.3s;
+    min-width: 26px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(4, 206, 167, 1);
+}
+.icon-plus{
+    content: url("../img/plus.svg");
+    transition: 0.3s;
+}
+.open .icon-plus{
+    transform: rotate(45deg);
+}
+.submenu{
+    display: none;
+}
+
+.accordion-text {
+    padding: 0 130px 18px 18px;
+    max-width: 826px;
+    margin-left: auto;
+    width: 100%;
+}
+.install-safari-android{
+    gap: 22px;
+}
+.install-safari-android .install-safari-count {
+    padding: 24px 0 28px;
+}
+.install-check{
+    border-radius: 50%;
+    background: #FFFFFF1C;
+    border: 1px solid #6687FF;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 39px;
+    top: 74px;
+    box-shadow: 0px 0px 4px 0px #6687FF inset;
+
+}
+
+@media (max-width: 1499px){
+    .faq-main:before {
+        right: 0;
+    }
+
+}
+@media (max-width: 1399px){
+    .application-info {
+        max-width: 500px;
+        padding-top: 70px;
+    }
+
+
+}
+@media (max-width: 1299px){
+    .application-cnt {
+        padding-right: 20px;
+    }
+    .application-photo {
+        max-width: 530px;
+    }
+    .benefits-app-wrap {
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .benefits-app-card {
+        width: calc(33.333333% - 15px);
+        height: 210px;
+        padding: 20px 20px 20px 25px;
+    }
+    .accordion-text {
+        padding: 0 80px 18px 18px;
+        max-width: 757px;
+    }
+    .instructions-click {
+        max-width: 590px;
+        height: 85px;
+    }
+    .instructions-revers {
+        height: 85px;
+    }
+    .instructions-center {
+        margin-top: 30px;
+    }
+    .application-info {
+        max-width: 475px;
+        padding-top: 66px;
+    }
+
+    .install-safari-android {
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 1199px){
+    .application-photo {
+        max-width: 430px;
+    }
+    .application-cnt {
+        padding-right: 0;
+    }
+    .application-info h1{
+        max-width: 400px;
+    }
+    .application-info {
+        padding-top: 16px;
+    }
+    .margin-blocks {
+        margin-top: 70px;
+    }
+    .application-main {
+        height: 534px;
+    }
+    .accordion-click {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+    .accordion-plus {
+        margin-left: auto;
+    }
+    .accordion-text {
+        padding: 0 13px 18px 57px;
+        max-width: 757px;
+        margin: 0;
+    }
+}
+@media (max-width: 1020px){
+    .application-cnt {
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .application-info {
+        padding-top: 0;
+        max-width: 475px;
+    }
+    .application-main {
+        height: auto;
+    }
+    .application-photo {
+        max-width: 489px;
+        margin: 0 auto;
+    }
+    .benefits-app-card {
+        width: calc(50% - 5px);
+        height: 180px;
+        padding: 18px 27px;
+    }
+    .benefits-app-wrap {
+        margin-top: 25px;
+        gap: 10px;
+    }
+    .install-safari {
+        margin-top: 25px;
+        gap: 0 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 767px){
+    .application-info .appications {
+        flex-direction: row;
+    }
+    .application-info h1{
+        max-width: 300px;
+        width: 100%;
+    }
+    .benefits-app-card {
+        width: 100%;
+        height: auto;
+        padding: 18px 27px;
+        gap: 14px;
+        min-height: 144px;
+    }
+    .margin-blocks {
+        margin-top: 50px;
+    }
+    .instructions-center {
+        margin-top: 25px;
+    }
+    .instructions-click {
+        max-width: 590px;
+        height: 56px;
+    }
+
+    .instructions-click svg{
+        width: 32px;
+    }
+    .instructions-revers {
+        height: 56px;
+    }
+    .step-by-step {
+        width: 30px;
+    }
+    .accordion-click {
+        padding: 14px 10px;
+    }
+    .accordion-text {
+        padding: 0 18px 17px 45px;
+    }
+    .faq-main:before {
+        top: -546px;
+        height: 808px;
+    }
+    .instructions-fon:after {
+        right: auto;
+        left: 0;
+        top: -150px;
+        background-image: url(../img/instructions-blur-mob.png);
+        max-width: 100%;
+        height: 926px;
+        background-position: center;
+    }
+    .application-photo:after {
+        height: 93px;
+    }
+    .accordion-click h4 {
+        min-width: auto;
+    }
+}
+@media (max-width: 575px){
+    .application-main {
+        padding-top: 88px;
+    }
+
+    .application-info .appication-app {
+        gap: 2px;
+    }
+    .application-info .appication-href svg {
+        width: 28px;
+    }
+    .application-info .appication-app span {
+        font-size: 12px;
+    }
+    .application-info .appication-href {
+        height: 54px;
+        border-radius: 8px;
+        padding: 8px;
+        gap: 7px;
+
+    }
+    .application-info .appication-app strong {
+        font-size: 18px;
+    }
+    .application-photo {
+        margin-top: 18px;
+    }
+    .application-info .btn {
+        max-width: 173px;
+        margin-top: 10px;
+    }
+    .install-safari-android .install-safari-count {
+        padding: 24px 23px 28px;
+        gap: 10px;
+    }
+}
+@media (max-width: 370px){
+    .application-info .appications {
+        flex-direction: column;
+    }
+    .application-info .appication-href{
+        width: 100%;
+    }
+    .application-info .btn {
+        max-width: 100%;
+    }
+}

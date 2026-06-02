@@ -1,0 +1,539 @@
+.review-main{
+    padding: 185px 0 20px;
+}
+.review-main:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/casino-review-blur.png");
+    max-width: 918px;
+    width: 100%;
+    height: 707px;
+    z-index: 2;
+}
+
+.review-fon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.review-fon img{
+    width: 100%;
+    height: 707px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.review-fon:after {
+    content: "";
+    position: absolute;
+    bottom: -63px;
+    right: 0;
+    background-image: url(../img/review-blur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 665px;
+    z-index: 1;
+}
+.review-flex{
+    gap: 67px;
+    position: relative;
+    z-index: 4;
+}
+.review-info{
+    max-width: 507px;
+    width: 100%;
+}
+.review-info p{
+    max-width: 487px;
+    width: 100%;
+    font-size: 18px;
+}
+.review-info .pin-casino-btn{
+    margin-top: 20px;
+    gap: 11px;
+}
+
+.review-names{
+    margin-top: 46px;
+    max-width: 390px;
+    width: 100%;
+}
+.review-names ul{
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review-names ul li{
+    width: max-content;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 9px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: hsla(0, 0%, 100%, 1);
+        /* Основа */
+
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px) brightness(1.1);
+        -webkit-backdrop-filter: blur(20px) brightness(1.1);
+
+        /* Бордер как в дизайне */
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* Параметры из Figma:
+           Refraction 80 → blur сильный
+           Depth 20     → небольшая тень
+           Frost 4      → лёгкое матовое стекло */
+        box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.1),  /* верхний блик */
+                0 8px 32px rgba(0, 0, 0, 0.3);            /* глубина */
+
+}
+.review-counts{
+    max-width: 721px;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    height: 256px;
+}
+.review-counts .rating-col{
+    max-width: 100%;
+}
+.review-counts .rating-pinco{
+    width: 100%;
+}
+.review-counts .rating-pinco img{
+    width: 100%;
+}
+.review-counts #score, .review-counts .score-display p {
+    font-size: 42px;
+}
+.stars svg{
+    width: 55px;
+    height: 55px;
+}
+.review-circle{
+    border-radius: 50%;
+    background: rgba(4, 206, 167, 1);
+    width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.review-circle:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    width: 5px;
+    height: 5px;
+
+}
+
+.nav-menu{
+    position: relative;
+    z-index: 2;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.nav-menu ul li + li{
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 48px;
+}
+.nav-menu a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(240, 240, 240, 1);
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+
+.license-security-wrap{
+    margin-top: 40px;
+    gap: 30px;
+}
+.license-security-box{
+    width: calc(25% - 23px);
+    min-height: 233px;
+    gap: 10px;
+    border-radius: 16px;
+    padding: 22px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(26, 26, 46, 1);
+
+}
+.license-security-photo{
+    width: 100%;
+}
+.license-security-photo img{
+    width: 90px;
+
+}
+.license-security-box p{
+    margin-top: 30px;
+    width: 100%;
+    color: rgba(221, 221, 221, 1);
+
+}
+.license-security-flex{
+    margin-top: 30px;
+    gap: 30px;
+}
+.license-security-logo{
+    position: relative;
+    width: calc(50% - 23px);
+    background: rgba(26, 26, 46, 1);
+    border-radius: 16px;
+    min-height: 102px;
+}
+.license-security-logo:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(96, 81, 224, 1);
+    height: 3px;
+    width: 175px;
+}
+.license-security-logo::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(96, 81, 224, 0) 0%, #6051E0 50%, rgba(96, 81, 224, 0) 100%);
+    max-width: 499px;
+    width: 100%;
+    height: 2px;
+}
+
+
+
+
+.bonuses-table{
+    gap: 8px;
+    margin-bottom: 35px;
+}
+.bonuses-boxes{
+    gap: 14px;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-top-color: rgba(255,255,255,0.2);
+    border-left-color: rgba(255,255,255,0.15);
+    box-shadow:
+            inset 0 1px 0 rgba(255,255,255,0.08),
+            inset 0 -1px 0 rgba(0,0,0,0.15);
+
+}
+.bonuses-gif{
+    background: rgba(39, 39, 56, 1);
+    max-width: 306px;
+    width: 100%;
+    height: 66px;
+    border-radius: 7px;
+    position: relative;
+    padding-left: 10px;
+    gap: 10px;
+}
+.bonuses-gif:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bonuses-gif-blur.png");
+    width: 86px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 0 7px;
+}
+.bonuses-gif span{
+    font-weight: 700;
+    font-style: Italic;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(97, 83, 224, 1);
+}
+.bonuses-bus{
+    max-width: 306px;
+    width: 100%;
+    height: 66px;
+    gap: 10px;
+    border-radius: 7px;
+    padding: 22px 18px;
+    border-right: 1px solid rgba(82, 82, 114, 1);
+    position: relative;
+}
+.bonuses-bus span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.games-block{
+    gap: 30px;
+    width: 100%;
+    margin-top: 40px;
+}
+.games-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    width: calc(25% - 23px);
+    height: 251px;
+}
+.games-boxes h4{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.payment-main:after{
+    content: "";
+    position: absolute;
+    top: -200px;
+    right: 0;
+    background-image: url("../img/payment-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1069px;
+    width: 100%;
+    height: 926px;
+}
+.payment-methods{
+    margin-top: 40px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 20px 12px;
+    background: rgba(255, 255, 255, 0.004);
+    backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-top-color: rgba(255,255,255,0.2);
+    border-left-color: rgba(255,255,255,0.15);
+}
+.payment-methods-boxes{
+    gap: 14px;
+}
+.payment-type{
+    background: hsla(0, 0%, 100%, 0.08);
+    max-width: 303px;
+    width: 100%;
+    border-radius: 7px;
+    height: 66px;
+    position: relative;
+}
+.bonuses-count{
+    font-weight: 600;
+    font-style: Italic;
+    font-size: 22.74px;
+    line-height: 100%;
+    background: linear-gradient(90deg, #04CEA7 9.26%, #026854 90.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    left: 0;
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+}
+.bonuses-count:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -11px;
+    width: 3px;
+    height: 44px;
+    background: rgba(4, 206, 167, 1);
+    border-radius: 0 8px 8px 0;
+}
+.bonuses-count:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../img/left-blur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 8px 8px 0;
+    width: 24px;
+    height: 66px;
+    z-index: -1;
+}
+.payment-type span{
+    font-weight: 700;
+    font-style: Italic;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.icon-deposit{
+    content: url("../img/icon-deposit.svg");
+}
+.icon-time{
+    content: url("../img/icon-time.svg");
+}
+.icon-data{
+    content: url("../img/icon-data.svg");
+}
+.bonuses-bus i{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+.methods-logos{
+    margin-top: 25px;
+    gap: 25px 60px;
+    justify-content: center;
+}
+.methods-logo{
+    max-width: 170px;
+    width: 100%;
+}
+
+
+.should-forgotten-flex{
+    gap: 30px;
+}
+.should-left{
+    width: 50%;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 33px 15px;
+    box-shadow: 0px -6px 31.9px 0px rgba(80, 169, 154, 0.4) inset;
+    border: 1px solid rgba(51, 51, 70, 0.2);
+}
+.should-rigth{
+    width: 50%;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 33px 15px;
+    box-shadow: 0px -6px 31.9px 0px rgba(255, 33, 0, 0.4) inset;
+    border: 1px solid rgba(51, 51, 70, 0.2);
+}
+.should-left ul, .should-rigth ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.should-left ul li, .should-rigth ul li{
+    gap: 17px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(221, 221, 221, 1);
+}
+.icon-check{
+    content: url("../img/icon-check.svg");
+}
+.icon-check-red{
+    content: url("../img/icon-check-red.svg");
+}
+
+
+
+.stakeholders-fon:before{
+    content: "";
+    position: absolute;
+    top: -250px;
+    left: 50px;
+    background-image: url("../img/stakeholders-blur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1068px;
+    width: 100%;
+    height: 926px;
+}
+.stakeholders-flex{
+    gap: 77px;
+}
+.stakeholders-info{
+    gap: 42px;
+    max-width: 483px;
+    width: 100%;
+}
+
+.stakeholders-info p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.stakehol-cnt{
+    max-width: 730px;
+    width: 100%;
+    min-height: 430px;
+    position: relative;
+}
+.stakehol-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.stakehol-rewiev{
+    padding-left: 70px;
+
+}
+
+.stakehol-pinco .score-display {
+    gap: 1px;
+    margin-left: 0;
+}
+
+.stakehol-pinco{
+    gap: 40px;
+}
+.stakehol-pinco img{
+    max-width: 278px;
+    width: 100%;
+}
+
+.stakehol-cnt .stars svg{
+    width: 110px;
+    height: 110px;
+}
+.stakehol-cnt .score, .stakehol-cnt .score-display p{
+    font-weight: 700;
+    font-size: 83.15px;
+}
+.stakehol-cnt .score-display p {
+    font-weight: 300;
+}
