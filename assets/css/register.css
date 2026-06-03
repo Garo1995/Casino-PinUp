@@ -1,0 +1,856 @@
+.register-main{
+    padding-top: 181px;
+}
+.register-main:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/register-befor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 670px;
+    height: 707px;
+}
+.register-main:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-image: url("../img/register-after.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 831px;
+    height: 538px;
+}
+.register-width{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.register-flex{
+    gap: 40px;
+
+}
+.register-info{
+    max-width: 666px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.register-info h3{
+    margin-top: 8px;
+    font-weight: 400;
+    color: rgba(221, 221, 221, 1);
+}
+.register-info h3 span{
+    font-weight: 600;
+
+}
+.register-info .btn{
+    margin-top: 20px;
+}
+
+.registr-fon{
+    max-width: 591px;
+    width: 100%;
+    padding-left: 89px;
+    position: relative;
+}
+
+.registr-boxes{
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(0deg, #0F0F24, #0F0F24),
+    linear-gradient(132.04deg, rgba(31, 34, 41, 0) 54.97%, #3561FF 117.58%);
+    max-width: 405px;
+    width: 100%;
+    border-radius: 13.5px;
+
+}
+
+.registr-title{
+    position: relative;
+    padding: 16px 24px;
+    border-bottom: 1.13px solid #494C53;
+}
+.registr-title h3{
+    text-align: center;
+    font-weight: 600;
+}
+.icon-closex{
+    content: url("../img/closex.png");
+    position: absolute;
+    top: 16px;
+    right: 15px;
+}
+.registr-padd{
+    padding: 22px 33px;
+}
+.register-center{
+    background: linear-gradient(180deg, #2A2F38 0%, #1F2229 100%);
+    border: 1.13px solid #2A2E37;
+    border-radius: 13.5px;
+    padding: 4px;
+}
+.register-email{
+    background: #04CEA7;
+    max-width: 166px;
+    width: 100%;
+    height: 38px;
+    border-radius: 11.25px;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.register-phone{
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+.register-forms{
+    margin-top: 22px;
+    gap: 15px;
+}
+.register-inp{
+    border: 1.13px solid #2A2E37;
+    background: #1F2229;
+    width: 100%;
+    height: 45px;
+    border-radius: 13.5px;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 27px;
+}
+.register-check{
+    padding: 18px 0 0 17px;
+    gap: 15px;
+    width: 100%;
+}
+.accept-circle{
+    border-radius: 50px;
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    border: 1.13px solid #494C53;
+    display: flex;
+}
+.register-check p{
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.90);
+
+}
+.registr-padd .btn {
+    margin-top: 33px;
+    width: 100%;
+    font-size: 15px;
+    padding: 13px 19px;
+    height: 45px;
+}
+.registr-back-fon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 666px;
+    height: 458px;
+    background-image: url("../img/registr-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.registr-back-fon:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 135px;
+    background-image: url(../img/asa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+    backdrop-filter: blur(2px);
+}
+
+.step-instruct{
+    margin-top: 40px;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+.step-instruct-box{
+    width: calc(20% - 24px);
+    border: 1px solid #FFFFFF17;
+    background: #1E2033;
+    border-radius: 16px;
+    padding: 18px;
+}
+.step-instruct-info{
+    min-height: 118px;
+}
+.step-instruct-title{
+    gap: 5px;
+}
+.step-instruct-title span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-top: 2px;
+}
+.step-instruct-title h4{
+    color: #FFFFFF;
+}
+.step-instruct-info p{
+    margin-top: 8px;
+    color: #8E8E8E;
+}
+.step-instruct-logo{
+    margin-top: 18px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.step-instruct-form{
+    background: #0D0D1F;
+    border-radius: 10px;
+    width: 100%;
+    padding: 9px 13px 10px;
+}
+.step-instruct-form span{
+    color: #A8B8CD;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    display: block;
+    margin-bottom: 9px;
+}
+.step-inp{
+    margin-top: 4.8px;
+    width: 100%;
+}
+.step-inp label{
+    display: flex;
+    width: 100%;
+}
+.step-inp input{
+    width: 100%;
+    background: #1A1A2E;
+    border-radius: 6px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 100%;
+    color: #A8B8CD75;
+    padding: 5px 10px 5px 14px;
+}
+.btn-register, .btn-black{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 100%;
+    color: #DDDDDD;
+    padding: 8px;
+    height: 28px;
+    border-radius: 6px;
+    margin-top: 4.8px;
+    background: #FF2100;
+    width: 100%;
+    transition: 0.3s;
+}
+.btn-register:hover{
+    background: #C0001E;
+    box-shadow: 0px 4px 16.3px 0px #FF210080;
+
+}
+.btn-black{
+    background: #1A1A2E;
+    color: #FFFFFF;
+}
+.btn-black:hover{
+    background: #FF2100;
+
+}
+
+
+
+
+
+
+
+
+.bonus-casino-fon{
+    padding-top: 54px;
+}
+.bonus-casino-fon:before{
+    content: "";
+    position: absolute;
+    top: -550px;
+    left: 0;
+    background-image: url("../img/bonus-casino-before.png");
+    max-width: 528px;
+    width: 100%;
+    height: 1118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.bonus-casino-fon:after{
+    content: "";
+    position: absolute;
+    top: -750px;
+    right: 0;
+    background-image: url("../img/bonus-casino-after.png");
+    max-width: 541px;
+    width: 100%;
+    height: 926px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bonus-casino-min{
+    background-image: url("../img/bonus-casino-fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 507px;
+    padding: 0 67px 0 41px;
+    border-radius: 16px;
+}
+.bonus-casino-photo{
+    max-width: 530px;
+    width: 100%;
+    margin-top: -54px;
+}
+.bonus-casino-cnt{
+    max-width: 553px;
+    width: 100%;
+    padding-top: 37px;
+}
+.bonus-casino-price{
+    padding-left: 23px;
+}
+.bonus-casino-price span{
+    color: #FF2100;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 30%;
+}
+.bonus-casino-price strong{
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    color: #FFFFFF;
+}
+.bonus-casino-price sub{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    color: #FFFFFF;
+
+}
+.promocod{
+    margin-top: 34px;
+    max-width: 553px;
+    width: 100%;
+    background-image: url("../img/promo-fon.png");
+    height: 101px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 29px;
+    padding-right: 10px;
+    justify-content: space-between;
+    padding-bottom: 3px;
+
+}
+.promocod strong{
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -7%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Oswald';
+
+}
+.promocod-name{
+    max-width: 282px;
+    width: 100%;
+}
+.promocod-name span{
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32.55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.minimum-deposit{
+    margin-top: 91px;
+    margin-left: auto;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4) brightness(1.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-top-color: rgba(255,255,255,0.2);
+    border-left-color: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    max-width: 331px;
+    width: 100%;
+    gap: 13px;
+    padding: 10px;
+    min-height: 68px;
+}
+.minimum-deposit p{
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    font-size: 16px;
+    line-height: 100%;
+    width: 115px;
+}
+.minimum-deposit strong{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.faq-register:after{
+    content: "";
+    position: absolute;
+    top: -600px;
+    right: 0;
+    background-image: url("../img/faq-reg-fon.png");
+    width: 488px;
+    height: 1122px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .registr-back-fon {
+        border-radius: 0;
+    }
+}
+
+
+@media (max-width: 1399px){
+
+    .register-info {
+        max-width: 585px;
+    }
+    .registr-back-fon {
+        max-width: 616px;
+        height: 448px;
+    }
+    .registr-fon {
+        max-width: 531px;
+    }
+    .register-flex{
+        justify-content: space-between;
+    }
+
+}
+@media (max-width: 1299px){
+    .registr-fon {
+        max-width: 550px;
+        padding-left: 60px;
+    }
+    .registr-back-fon {
+        max-width: 571px;
+        height: 446px;
+    }
+    .step-instruct{
+        justify-content: center;
+    }
+    .step-instruct-box {
+        width: calc(25% - 24px);
+    }
+    .bonus-casino-min {
+        padding: 0 17px 0 14px;
+    }
+}
+@media (max-width: 1199px){
+    .registr-back-fon {
+        max-width: 478px;
+        height: 430px;
+    }
+    .register-main:before {
+        max-width: 503px;
+        height: 506px;
+    }
+    .register-flex {
+        gap: 20px;
+    }
+    .registr-fon {
+        max-width: 469px;
+        padding-left: 42px;
+    }
+    .register-main {
+        padding-top: 151px;
+    }
+    .step-instruct {
+        margin-top: 30px;
+        gap: 18px;
+    }
+    .promocod strong {
+        font-size: 60px;
+    }
+    .promocod-name {
+        max-width: 241px;
+    }
+    .promocod-name span {
+        font-size: 18px;
+        line-height: 19.55px;
+    }
+
+
+    .promocod {
+        max-width: 477px;
+        height: 87px;
+        padding-left: 20px;
+        padding-bottom: 4px;
+    }
+    .minimum-deposit {
+        margin-top: 50px;
+    }
+    .bonus-casino-min {
+        min-height: 445px;
+    }
+    .bonus-casino-price strong {
+        font-size: 80px;
+    }
+    .step-instruct-box {
+        width: calc(25% - 14px);
+    }
+
+
+}
+@media (max-width: 1020px){
+    .register-flex {
+        gap: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register-info {
+        max-width: 785px;
+    }
+    .register-info h1{
+        max-width: 450px;
+        width: 100%;
+    }
+    .register-info h3{
+        max-width: 450px;
+        width: 100%;
+    }
+    .register-main {
+        padding-top: 113px;
+    }
+    .register-main:before {
+        max-width: 549px;
+        height: 538px;
+        background-position: center;
+    }
+    .register-main:after {
+        display: none;
+    }
+    .registr-back-fon {
+        max-width: 737px;
+        height: 444px;
+    }
+    .registr-boxes {
+        max-width: 360px;
+    }
+    .registr-padd {
+        padding: 22px 23px;
+    }
+    .registr-back-fon:before {
+        bottom: -1px;
+    }
+    .step-instruct-box {
+        width: calc(33.333333% - 14px);
+    }
+
+    .bonus-casino-fon:after {
+        max-width: 453px;
+        height: 795px;
+    }
+
+    .bonus-casino-min {
+        min-height: max-content;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bonus-casino-photo {
+        margin-top: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    .bonus-casino-min {
+        min-height: max-content;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-position: center;
+        padding: 20px 19px 0;
+    }
+    .minimum-deposit {
+        margin-top: 21px;
+    }
+    .bonus-casino-fon {
+        padding-top: 0;
+    }
+
+    .bonus-casino-cnt {
+        padding-top: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 880px){
+    .registr-back-fon {
+        max-width: 640px;
+        height: 430px;
+    }
+}
+
+
+
+
+
+@media (max-width: 767px){
+    .register-info h1 {
+        max-width: 360px;
+    }
+
+    .register-main:before {
+        max-width: 100%;
+        height: 648px;
+    }
+    .registr-back-fon {
+        max-width: 517px;
+        height: 424px;
+    }
+    .step-instruct {
+        margin-top: 25px;
+        gap: 10px;
+    }
+    .step-instruct-box {
+        width: calc(50% - 7px);
+    }
+    .register-main:before {
+        max-width: 100%;
+        height: 632px;
+        background-image: url("../img/register-befor-mob.png");
+    }
+    .bonus-casino-min {
+        background-image: url(../img/bonus-fon-mob.png);
+    }
+    .faq-register:after {
+        top: -355px;
+        width: 423px;
+        height: 856px;
+    }
+    .bonus-casino-price {
+        padding-left: 14px;
+    }
+}
+@media (max-width: 570px){
+    .register-info h1 {
+        width: 101%;
+    }
+    .registr-fon {
+        max-width: 469px;
+        padding-left: 0;
+    }
+    .register-info .btn {
+        margin-top: 18px;
+        font-size: 16px;
+    }
+    .registr-boxes {
+        max-width: 295px;
+        margin: 0 auto;
+    }
+    .registr-padd {
+        padding: 15px 23px;
+    }
+    .register-center {
+        border-radius: 9.5px;
+        padding: 2px;
+    }
+    .register-email {
+        max-width: 122px;
+        height: 28px;
+        border-radius: 8.25px;
+        font-size: 9.5px;
+    }
+    .register-phone {
+        font-size: 9.5px;
+    }
+    .registr-title h3 {
+        text-align: center;
+        font-weight: 500;
+    }
+    .icon-closex {
+        width: 12px;
+    }
+
+    .register-inp {
+        height: 32px;
+        border-radius: 8.5px;
+        font-size: 9.5px;
+        padding-left: 19px;
+    }
+    .register-forms {
+        margin-top: 18px;
+        gap: 11px;
+    }
+
+    .register-check {
+        padding: 12px 0 0 12px;
+        gap: 10px;
+    }
+    .accept-circle {
+        max-width: 14px;
+        height: 14px;
+    }
+    .register-check p {
+        font-size: 9.5px;
+    }
+    .register-width {
+        overflow: hidden;
+    }
+
+    .registr-back-fon {
+        max-width: 560px;
+        height: 332px;
+        left: 14px;
+    }
+    .registr-padd .btn {
+        margin-top: 23px;
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 19px;
+        height: 32px;
+    }
+    .step-instruct-box {
+        width: 100%;
+        max-width: 410px;
+    }
+    .registr-back-fon:before {
+        height: 91px;
+    }
+    .bonus-casino-min {
+        padding: 20px 8px 0;
+    }
+    .bonus-casino-price span {
+        font-size: 20px;
+    }
+    .bonus-casino-price strong {
+        font-size: 58px;
+    }
+    .bonus-casino-price sub {
+        font-size: 15px;
+    }
+    .promocod {
+        max-width: 337px;
+        height: 61px;
+        padding-left: 15px;
+        margin-top: 15px;
+        padding-bottom: 2px;
+    }
+    .promocod strong {
+        font-size: 48px;
+    }
+
+    .promocod-name span {
+        font-size: 13px;
+        line-height: 12.55px;
+    }
+    .promocod-name {
+        max-width: 160px;
+    }
+    .minimum-deposit p {
+        font-size: 10px;
+        width: 72px;
+    }
+    .minimum-deposit strong {
+        font-size: 24px;
+    }
+    .minimum-deposit {
+        margin-top: 17px;
+        gap: 8px;
+        max-width: 204px;
+        border-radius: 8px;
+        padding: 6px;
+        min-height: 42px;
+    }
+    .bonus-casino-fon:before {
+        top: -750px;
+        height: 818px;
+    }
+    .bonus-casino-fon:after{
+        display: none;
+    }
+    .step-instruct-fon:after {
+        content: '';
+        position: absolute;
+        top: 150px;
+        right: 0;
+        background-image: url("../img/step-fon-after.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 667px;
+    }
+    .register-main {
+        padding-top: 85px;
+    }
+}

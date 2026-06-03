@@ -1,0 +1,310 @@
+.faq-pages{
+    padding-top: 113px;
+}
+.faq-pages:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/register-befor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 670px;
+    height: 707px;
+}
+.faq-pages:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-image: url("../img/faq-page-after.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1175px;
+    height: 655px;
+}
+.faq-form{
+    width: 100%;
+    max-width: 910px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+.faq-form label{
+    display: flex;
+    width: 100%;
+
+}
+.faq-form input{
+    width: 100%;
+    background: #1A1A2E;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 16px;
+    height: 56px;
+    padding: 10px 90px 10px 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.faq-form input::placeholder{
+    color: #56566B;
+}
+.btn-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    height: 54px;
+    background: #FF2100;
+    border-radius: 0 15px 15px 0;
+    transition: 0.3s;
+    width: 85px;
+}
+.btn-search:hover{
+    background: #C0001E;
+
+}
+.icon-search-form{
+    content: url("../img/search-form.svg");
+}
+
+.faq-pages-title{
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+.faq-pages-title h2{
+    text-align: center;
+}
+.faq-pages-title p{
+    max-width: 852px;
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+}
+.faq-accordion {
+    width: 100%;
+    background: unset;
+
+}
+.faq-accordion>.accordion-click {
+    background: rgba(26, 26, 46, 1);
+    border-radius: 10px;
+}
+.faq-accordion>.accordion-click h4 {
+    min-width: 220px;
+}
+.inner-submenu{
+    display: none;
+}
+.accordion-inner{
+    gap: 9px 15px;
+    margin-top: 9px;
+    align-items: flex-start;
+}
+.accordion-inner .accordion-box{
+    background: #2F2F4A;
+    width: calc(50% - 8px);
+}
+
+.inner-submenu p{
+    padding: 0 17px 15px;
+}
+
+.accordion-icons svg path{
+    transition: 0.3s;
+}
+.open .accordion-icons svg path{
+    transition: 0.3s;
+    fill: #04CEA7;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-support{
+    padding-top: 39px;
+}
+.contact-support:before{
+    content: "";
+    position: absolute;
+    top: -160px;
+    left: 0;
+    background-image: url("../img/support-before.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 528px;
+    width: 100%;
+    height: 1042px;
+}
+.contact-support:after{
+    content: "";
+    position: absolute;
+    top: -320px;
+    right: 0;
+    background-image: url("../img/support-after.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 541px;
+    width: 100%;
+    height: 926px;
+}
+
+.contact-support-fon{
+    background-image: url("../img/support-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 16px;
+    padding: 0 121px 0 103px;
+    min-height: 401px;
+    position: relative;
+    z-index: 2;
+}
+.contact-support-info{
+    max-width: 550px;
+    width: 100%;
+    padding-top: 91px;
+    position: relative;
+    z-index: 2;
+}
+.contact-support-info h2{
+    text-align: left;
+}
+.live-chat{
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background: #048BCE;
+    max-width: 225px;
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.live-chat:hover{
+    box-shadow: 0px 7px 23.6px 0px #51C1F980;
+
+}
+.icon-telegram{
+    content: url("../img/icon-telegram.svg");
+}
+.contact-support-pic{
+    max-width: 547px;
+    width: 100%;
+    margin-top: -39px;
+}
+
+.teleg-chat-mob{
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 1299px){
+    .contact-support-fon {
+        padding: 0 20px 0 70px;
+    }
+    .contact-support-info {
+        max-width: 450px;
+    }
+    .faq-pages:after {
+        max-width: 911px;
+        height: 556px;
+    }
+
+}
+@media (max-width: 1199px){
+    .contact-support-fon {
+        padding: 0 0 0 28px;
+        min-height: 350px;
+    }
+}
+@media (max-width: 1020px){
+    .contact-support-fon {
+        padding: 56px 0 0;
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        background-position: center;
+    }
+    .contact-support-pic {
+        max-width: 500px;
+        margin: -12px auto 0;
+    }
+    .contact-support-info{
+        padding: 0 28px;
+        max-width: 470px;
+    }
+    .live-chat {
+        margin-top: 15px;
+        max-width: 192px;
+        height: 52px;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+    .contact-support {
+        padding-top: 0;
+    }
+    .accordion-inner .accordion-box {
+        width: 100%;
+    }
+    .faq-pages-cnt{
+        margin-top: 25px;
+    }
+    .faq-pages-cnt .accordion {
+        margin-top: 0;
+    }
+}
+@media (max-width: 757px){
+    .faq-pages {
+        padding-top: 84px;
+    }
+}
+@media (max-width: 570px){
+    .faq-accordion .accordion-click h4 {
+        font-size: 16px;
+    }
+    .faq-pages:after {
+        height: 432px;
+        background-position: center;
+    }
+    .faq-pages-title {
+        margin-top: 25px;
+    }
+    .faq-pages-title p {
+        margin-top: 12px;
+    }
+    .contact-support-fon{
+        background-image: url("../img/support-fon-mob.png");
+    }
+    .teleg-chat-desc{
+        display: none;
+    }
+    .teleg-chat-mob{
+        display: block;
+    }
+
+}

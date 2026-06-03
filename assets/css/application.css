@@ -313,6 +313,9 @@
     height: 26px;
     border-radius: 50%;
     background: rgba(4, 206, 167, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon-plus{
     content: url("../img/plus.svg");
@@ -565,6 +568,10 @@
     .install-safari-android .install-safari-count {
         padding: 24px 23px 28px;
         gap: 10px;
+    }
+    .application-info p {
+        font-size: 16px;
+        margin-top: 12px;
     }
 }
 @media (max-width: 370px){

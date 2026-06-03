@@ -46,32 +46,46 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
 $(function () {
-    let Accordion = function (el, multiple) {
-        this.el = el || {};
-        this.multiple = multiple || false;
-        let links = this.el.find('.link');
-        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-    };
-    Accordion.prototype.dropdown = function (e) {
-        let $el = e.data.el;
-        $this = $(this);
-        $next = $this.next();
-        $next.slideToggle();
-        if (!e.data.multiple) {
-            $el.find('.submenu').not($next).slideUp();
-        }
-        if (!$this.hasClass('open')) {
-            $('.link').each(function () {
-                $(this).removeClass('open')
-            })
-            $this.addClass('open')
-        } else {
-            $this.removeClass('open')
-        }
-    }
-    let accordion = new Accordion($('#accordion'), false);
+
+    // Главный аккордеон
+    $('.link').on('click', function () {
+
+        const $this = $(this);
+        const $submenu = $this.next('.submenu');
+
+        $submenu.slideToggle();
+
+        $('.link')
+            .not($this)
+            .removeClass('open')
+            .next('.submenu')
+            .slideUp();
+
+        $this.toggleClass('open');
+    });
+
+    // Вложенный аккордеон
+    $('.inner-link').on('click', function (e) {
+
+        e.stopPropagation();
+
+        const $this = $(this);
+        const $submenu = $this.next('.inner-submenu');
+
+        $submenu.slideToggle();
+
+        $this
+            .closest('.accordion-inner')
+            .find('.inner-link')
+            .not($this)
+            .removeClass('open')
+            .next('.inner-submenu')
+            .slideUp();
+
+        $this.toggleClass('open');
+    });
+
 });
 
 
@@ -103,3 +117,47 @@ function toggleMenu(el) {
     const menu = el.nextElementSibling;
     menu.classList.toggle('open');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let licenseSlider = new Swiper(".license-slider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+        '1199': {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        '1020': {
+            slidesPerView: 3.2,
+            spaceBetween: 20,
+            loop: true,
+        },
+        '767': {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+            loop: true,
+        },
+
+        '320': {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+            loop: true,
+
+        },
+    },
+});

@@ -25,7 +25,12 @@
     object-fit: cover;
     object-position: top;
 }
-
+.review-fon-mob{
+    display: none;
+}
+.review-mob-phone{
+    display: none;
+}
 .review-fon:after {
     content: "";
     position: absolute;
@@ -52,12 +57,20 @@
     max-width: 487px;
     width: 100%;
     font-size: 18px;
+    margin-top: 8px;
 }
 .review-info .pin-casino-btn{
     margin-top: 20px;
     gap: 11px;
 }
-
+.review-info .btn{
+    max-width: 224px;
+    width: 100%;
+}
+.review-info .btn-liner {
+    max-width: 224px;
+    width: 100%;
+}
 .review-names{
     margin-top: 46px;
     max-width: 390px;
@@ -79,24 +92,21 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: hsla(0, 0%, 100%, 1);
-        /* Основа */
-
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(20px) brightness(1.1);
-        -webkit-backdrop-filter: blur(20px) brightness(1.1);
-
-        /* Бордер как в дизайне */
-        border: 1px solid rgba(255, 255, 255, 0.15);
-
-        /* Параметры из Figma:
-           Refraction 80 → blur сильный
-           Depth 20     → небольшая тень
-           Frost 4      → лёгкое матовое стекло */
-        box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.1),  /* верхний блик */
-                0 8px 32px rgba(0, 0, 0, 0.3);            /* глубина */
-
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+}
+.review-names ul li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(170deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .04), rgba(255, 255, 255, .08), rgba(255, 255, 255, 0.5));
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 .review-counts{
     max-width: 721px;
@@ -114,7 +124,7 @@
 .review-counts .rating-pinco img{
     width: 100%;
 }
-.review-counts #score, .review-counts .score-display p {
+.review-counts .score, .review-counts .score-display p {
     font-size: 42px;
 }
 .stars svg{
@@ -143,7 +153,7 @@
 
 .nav-menu{
     position: relative;
-    z-index: 2;
+    z-index: 15;
 }
 
 .nav-menu ul{
@@ -164,14 +174,30 @@
     white-space: nowrap;
     transition: 0.3s;
 }
-
-
-.license-security-wrap{
+.license-security-main{
+    position: relative;
+    z-index: 3;
+}
+.license-security-main:after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/support-after.png");
+    max-width: 541px;
+    width: 100%;
+    height: 926px;
+    z-index: -1;
+}
+.license-security-scr{
     margin-top: 40px;
-    gap: 30px;
+    position: relative;
+    z-index: 2;
 }
 .license-security-box{
-    width: calc(25% - 23px);
+    width: 100%;
     min-height: 233px;
     gap: 10px;
     border-radius: 16px;
@@ -201,7 +227,7 @@
 }
 .license-security-logo{
     position: relative;
-    width: calc(50% - 23px);
+    width: calc(50% - 15px);
     background: rgba(26, 26, 46, 1);
     border-radius: 16px;
     min-height: 102px;
@@ -234,6 +260,9 @@
 .bonuses-table{
     gap: 8px;
     margin-bottom: 35px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 3;
 }
 .bonuses-boxes{
     gap: 14px;
@@ -298,10 +327,26 @@
     color: rgba(255, 255, 255, 1);
 }
 
+
+.games-block-main:before{
+    content: "";
+    position: absolute;
+    top: -450px;
+    left: 0;
+    background-image: url("../img/games-block-before.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 489px;
+    width: 100%;
+    height: 926px;
+    z-index: -1;
+}
 .games-block{
     gap: 30px;
     width: 100%;
     margin-top: 40px;
+    position: relative;
+    z-index: 2;
 }
 .games-boxes{
     display: flex;
@@ -313,7 +358,7 @@
     background-size: cover;
     border-radius: 16px;
     width: calc(25% - 23px);
-    height: 251px;
+    min-height: 251px;
 }
 .games-boxes h4{
     color: rgba(255, 255, 255, 1);
@@ -324,7 +369,7 @@
 .payment-main:after{
     content: "";
     position: absolute;
-    top: -200px;
+    top: -300px;
     right: 0;
     background-image: url("../img/payment-fon.png");
     background-repeat: no-repeat;
@@ -332,6 +377,7 @@
     max-width: 1069px;
     width: 100%;
     height: 926px;
+    z-index: -1;
 }
 .payment-methods{
     margin-top: 40px;
@@ -428,6 +474,19 @@
 }
 
 
+.should-forgotten:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/should-before.png");
+    max-width: 764px;
+    width: 100%;
+    height: 764px;
+    z-index: -1;
+}
 .should-forgotten-flex{
     gap: 30px;
 }
@@ -473,33 +532,42 @@
 .stakeholders-fon:before{
     content: "";
     position: absolute;
-    top: -250px;
-    left: 50px;
+    top: -274px;
+    left: 91px;
     background-image: url("../img/stakeholders-blur.png");
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1068px;
+    max-width: 1053px;
     width: 100%;
-    height: 926px;
+    height: 834px;
 }
 .stakeholders-flex{
     gap: 77px;
+    position: relative;
+    z-index: 2;
 }
 .stakeholders-info{
     gap: 42px;
     max-width: 483px;
     width: 100%;
 }
-
+.stakeholders-info .btn{
+    max-width: 224px;
+    width: 100%;
+}
 .stakeholders-info p{
     font-size: 18px;
     line-height: 24px;
 }
-
+.stakehol-rewiev{
+    position: relative;
+    z-index: 2;
+    padding-left: 50px;
+}
 .stakehol-cnt{
     max-width: 730px;
     width: 100%;
-    min-height: 430px;
+    min-height: 395px;
     position: relative;
 }
 .stakehol-img{
@@ -508,10 +576,7 @@
     left: 0;
     width: 100%;
 }
-.stakehol-rewiev{
-    padding-left: 70px;
 
-}
 
 .stakehol-pinco .score-display {
     gap: 1px;
@@ -536,4 +601,356 @@
 }
 .stakehol-cnt .score-display p {
     font-weight: 300;
+}
+
+
+@media (max-width: 1299px){
+    .review-main {
+        padding: 148px 0 20px;
+    }
+    .games-block {
+        gap: 20px;
+    }
+    .games-boxes {
+        width: calc(25% - 15px);
+        min-height: 229px;
+    }
+    .stakehol-cnt .stars svg {
+        width: 84px;
+        height: 84px;
+    }
+    .stakehol-cnt .score, .stakehol-cnt .score-display p {
+        font-size: 58.15px;
+    }
+    .stakehol-pinco img {
+        max-width: 233px;
+    }
+
+    .stakeholders-fon:before {
+        top: -274px;
+        max-width: 960px;
+        height: 775px;
+    }
+    .stars svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (max-width: 1199px){
+    .nav-menu ul {
+        gap: 35px;
+    }
+    .nav-menu ul li + li {
+        padding-left: 35px;
+    }
+    .review-counts .rating-wrap {
+        gap: 6px;
+    }
+    .review-counts .score, .review-counts .score-display p {
+        font-size: 28px;
+    }
+    .review-main:before {
+        max-width: 777px;
+        height: 620px;
+    }
+    .review-main {
+        padding: 120px 0 20px;
+    }
+    .review-fon img {
+        height: 576px;
+        object-position: unset;
+    }
+    .review-flex {
+        gap: 50px;
+    }
+    .review-counts {
+        height: 180px;
+    }
+    .review-names {
+        margin-top: 30px;
+    }
+
+    .license-security-scr {
+        margin-top: 25px;
+        margin-right: -20px;
+    }
+    .stakeholders-fon:before {
+        top: -219px;
+        max-width: 897px;
+        height: 775px;
+        left: 0;
+    }
+    .should-left ul li, .should-rigth ul li {
+        font-size: 16px;
+    }
+    .games-block {
+        justify-content: center;
+    }
+    .games-boxes {
+        width: calc(33% - 15px);
+        min-height: auto;
+    }
+    .stakeholders-flex {
+        gap: 20px;
+    }
+    .stakeholders-info p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .stakeholders-info {
+        max-width: 422px;
+    }
+
+    .stakehol-cnt {
+        min-height: 294px;
+    }
+}
+@media (max-width: 1020px){
+    .review-counts {
+        height: 197px;
+        max-width: 493px;
+    }
+    .review-flex {
+        gap: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .review-fon-desc{
+        display: none;
+    }
+    .review-fon-mob{
+        display: block;
+    }
+    .review-fon img {
+        height: auto;
+        object-position: unset;
+        object-fit: unset;
+    }
+
+    .nav-menu{
+        overflow-x: auto;
+        margin-right: -20px;
+        padding-bottom: 22px;
+    }
+    .nav-menu::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background: #FFFFFF0D;
+        border-radius: 6px;
+    }
+    .nav-menu::-webkit-scrollbar-thumb {
+        width: 2px;
+        height: 2px;
+        border-radius: 12px;
+        background: #04CEA7;
+
+    }
+    .nav-menu ul{
+        justify-content: flex-start;
+    }
+    .license-security-flex {
+        margin-top: 20px;
+        gap: 11px;
+        flex-direction: column;
+    }
+    .license-security-logo {
+        width: 100%;
+    }
+    .bonuses-table {
+        gap: 8px;
+        margin-bottom: 14px;
+        margin-top: 25px;
+    }
+    .bonuses-boxes {
+        gap: 0;
+        flex-direction: column;
+        border-radius: 8px;
+        padding: 10px 6px;
+    }
+    .bonuses-gif {
+        max-width: 100%;
+    }
+    .bonuses-bus {
+        max-width: 100%;
+        padding: 22px 18px;
+        border-right: unset;
+        border-bottom: 1px solid rgba(82, 82, 114, 1);
+    }
+    .bonuses-bus:last-child{
+        border-bottom: unset;
+    }
+    .games-boxes {
+        width: calc(50% - 15px);
+        min-height: 250px;
+    }
+
+    .games-block {
+        margin-top: 25px;
+    }
+    .payment-methods-boxes {
+        gap: 0;
+        flex-direction: column;
+    }
+    .payment-type {
+        max-width: 100%;
+    }
+    .payment-main:after{
+        bottom: -250px;
+        top: auto;
+    }
+    .payment-methods {
+        margin-top: 25px;
+        border-radius: 0;
+        padding: 0;
+        background: unset;
+        border: unset;
+        backdrop-filter: unset;
+    }
+    .bonuses-bus i {
+        top: 14px;
+        right: auto;
+        left: 16px;
+    }
+    .methods-logos {
+        margin-top: 25px;
+        gap: 20px 20px;
+        justify-content: center;
+    }
+    .should-forgotten-flex {
+        flex-direction: column;
+    }
+    .should-left {
+        width: 100%;
+    }
+    .should-rigth{
+        width: 100%;
+    }
+    .stakeholders-fon:before{
+        display: none;
+    }
+    .stakeholders-flex {
+        gap: 40px;
+        flex-direction: column-reverse;
+    }
+
+    .stakeholders-info {
+        align-items: center;
+        text-align: center;
+    }
+    .stakehol-cnt {
+        min-height: 317px;
+        max-width: 630px;
+    }
+
+
+}
+
+@media (max-width: 767px){
+    .license-security-scr {
+        margin-right: -11px;
+    }
+    .stakehol-rewiev {
+        padding-left: 20px;
+    }
+    .nav-menu {
+        margin-right: -11px;
+    }
+    .games-boxes {
+        width: 100%;
+        min-height: 250px;
+        max-width: 300px;
+    }
+    .review-fon:after{
+        display: none;
+    }
+}
+@media (max-width: 575px){
+    .review-fon {
+        top: auto;
+        bottom: 0;
+    }
+    .review-main:before {
+        height: 403px;
+        background-position: center;
+    }
+    .review-main {
+        padding: 80px 0 0;
+    }
+    .review-info p {
+        font-size: 16px;
+        margin-top: 13px;
+        line-height: 18px;
+    }
+    .review-fon-mob{
+        display: none;
+    }
+    .review-mob-phone{
+        display: block;
+    }
+    .review-fon {
+        top: 0;
+        bottom: auto;
+    }
+    .review-counts .rating-pinco {
+        top: -5px;
+        max-width: 360px;
+        position: relative;
+    }
+    .review-counts .score, .review-counts .score-display p {
+        font-size: 22px;
+    }
+    .review-counts .rating-wrap {
+        gap: 10px;
+    }
+    .license-security-logo {
+        width: 100%;
+        min-height: 69px;
+        padding: 0 27px;
+        border-radius: 8px;
+    }
+    .bonuses-bus span {
+        font-size: 16px;
+    }
+    .methods-logos {
+        gap: 20px 11px;
+    }
+    .stakehol-cnt .stars svg {
+        width: 45px;
+        height: 45px;
+    }
+    .stakehol-cnt .score, .stakehol-cnt .score-display p {
+        font-size: 38.15px;
+    }
+    .stakehol-pinco {
+        gap: 18px;
+        margin-bottom: 9px;
+    }
+    .stakehol-rewiev {
+        padding-left: 0;
+    }
+    .stakehol-pinco img {
+        max-width: 118px;
+    }
+    .stakehol-img {
+        left: -17px;
+    }
+    .stakehol-cnt {
+        min-height: 191px;
+        max-width: 360px;
+    }
+    .bonuses-gif {
+        padding-left: 19px;
+    }
+    .nav-menu a {
+        font-size: 16px;
+    }
+    .nav-menu ul li + li {
+        padding-left: 39px;
+    }
+    .nav-menu ul {
+        gap: 39px;
+    }
+    .review-names ul li {
+        height: 35px;
+    }
 }
