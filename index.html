@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="style.css">
@@ -26,24 +25,24 @@
                     </ul>
                 </nav>
                 <div class="leng-mobile">
-                    <div class="leng-mobile-name">
+                    <a href="/ru/" hreflang="ru" class="leng-mobile-name">
                         <img src="./assets/img/ru.png" alt="ru"> RU
-                    </div>
-                    <div class="leng-mobile-name">
+                    </a>
+                    <a href="/en/" hreflang="en" class="leng-mobile-name">
                         <img src="./assets/img/en.png" alt="en"> EN
-                    </div>
-                    <div class="leng-mobile-name">
+                    </a>
+                    <a href="/az/" hreflang="az" class="leng-mobile-name">
                         <img src="./assets/img/az.png" alt="az"> AZ
-                    </div>
-                    <div class="leng-mobile-name">
+                    </a>
+                    <a href="/uz/" hreflang="uz" class="leng-mobile-name">
                         <img src="./assets/img/uz.png" alt="uz"> UZ
-                    </div>
-                    <div class="leng-mobile-name">
+                    </a>
+                    <a href="/pt/" hreflang="pt" class="leng-mobile-name">
                         <img src="./assets/img/pt.png" alt="pt"> PT
-                    </div>
-                    <div class="leng-mobile-name">
+                    </a>
+                    <a href="/es/" hreflang="es" class="leng-mobile-name">
                         <img src="./assets/img/es.png" alt="es"> ES
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -93,11 +92,11 @@
                     <a href="#" class="btn-login">Войти</a>
                     <a href="#" class="btn-href">Зарегистрироваться</a>
                 </div>
-                <div class="open-menu">
+                <button class="open-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
 
 
@@ -425,12 +424,12 @@
                     <table>
                         <thead>
                         <tr>
-                            <td><h3>Здесь будет
-                                <br> заголовок №1 </h3></td>
-                            <td><h3>Здесь будет
-                                <br> заголовок №1 </h3></td>
-                            <td><h3>Здесь будет
-                                <br> заголовок №1 </h3></td>
+                            <th><h3>Здесь будет
+                                <br> заголовок №1 </h3></th>
+                            <th><h3>Здесь будет
+                                <br> заголовок №1 </h3></th>
+                            <th><h3>Здесь будет
+                                <br> заголовок №1 </h3></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -518,100 +517,101 @@
             </div>
         </div>
     </section>
-    <footer class="section-margin">
-        <div class="container">
-            <div class="footer-main G-align-start G-justify-between">
-                <div class="footer-head G-flex-column G-align-start">
-                    <a href="#" class="G-flex"><img src="./assets/img/logo.svg" alt="logo"></a>
-                    <p>
-                        Задача организации, в особенности же постоянный
-                    </p>
-                    <div class="social-href G-align-center">
-                        <a href="#" target="_blank" class="href-icon">
-                            <img src="./assets/img/telegram.svg" alt="telegram">
-                        </a>
-                        <a href="#" target="_blank" class="href-icon">
-                            <img src="./assets/img/instagram.svg" alt="instagram">
-                        </a>
-                        <a href="#" target="_blank" class="href-icon">
-                            <img src="./assets/img/youtube.svg" alt="youtube">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-content G-align-start">
-                    <div class="footer-menu">
-                        <div class="opened-menu" onclick="toggleMenu(this)">
-                            <h4>Навигация</h4>
-                            <i class="caret-down-white"></i>
-                        </div>
-                        <ul class="menu-list">
-                            <li><a href="#">Идейные</a></li>
-                            <li><a href="#">Соображения</a></li>
-                            <li><a href="#">Значимость</a></li>
-                            <li><a href="#">Равным</a></li>
-                            <li><a href="#">Товарищи</a></li>
-                            <li><a href="#">Идейные</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu">
-                        <div class="opened-menu" onclick="toggleMenu(this)">
-                            <h4>Контакты</h4>
-                            <i class="caret-down-white"></i>
-                        </div>
-                        <ul class="menu-list">
-                            <li><a href="#">office@ekb.golgames.ru</a></li>
-                            <li><a href="#">Напишите в WhatsApp</a></li>
-                            <li><a href="#">Напишите в Telegram</a></li>
-                            <li><a href="#">Напишите в VK</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu">
-                        <div class="opened-menu" onclick="toggleMenu(this)">
-                            <h4>Документы</h4>
-                            <i class="caret-down-white"></i>
-                        </div>
-                        <ul class="menu-list">
-                            <li><a href="#">Политика конфиденциальности ПД</a></li>
-                            <li><a href="#">Пользовательское соглашение</a></li>
-                            <li><a href="#">Согласие на обработку ПД</a></li>
-                            <li><a href="#">Публичная оферта </a></li>
-                            <li><a href="#">Согласие на распространение ПД</a></li>
-                        </ul>
-                    </div>
-                </div>
+</main>
 
-                <div class="footer-info">
-                    <div class="site-info">
-                        <p>Сайт является информационным. Пожалуйста, играйте ответственно. 18+</p>
-                    </div>
-                    <div class="footer-paymnt G-align-center">
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/visa.png" alt="visa">
-                        </div>
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/mastercard.png" alt="mastercard">
-                        </div>
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/bitcoin.png" alt="bitcoin">
-                        </div>
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/tbank.png" alt="tbank">
-                        </div>
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/skrill.png" alt="skrill">
-                        </div>
-                        <div class="footer-logo G-center">
-                            <img src="./assets/img/neteller.png" alt="neteller">
-                        </div>
-                    </div>
+<footer class="section-margin">
+    <div class="container">
+        <div class="footer-main G-align-start G-justify-between">
+            <div class="footer-head G-flex-column G-align-start">
+                <a href="#" class="G-flex"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <p>
+                    Задача организации, в особенности же постоянный
+                </p>
+                <div class="social-href G-align-center">
+                    <a href="#" target="_blank" class="href-icon">
+                        <img src="./assets/img/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#" target="_blank" class="href-icon">
+                        <img src="./assets/img/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" target="_blank" class="href-icon">
+                        <img src="./assets/img/youtube.svg" alt="youtube">
+                    </a>
                 </div>
             </div>
-            <div class="copyright G-center">
-                <p>Сopyright 2026</p>
+            <div class="footer-content G-align-start">
+                <div class="footer-menu">
+                    <div class="opened-menu" onclick="toggleMenu(this)">
+                        <h4>Навигация</h4>
+                        <i class="caret-down-white"></i>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Идейные</a></li>
+                        <li><a href="#">Соображения</a></li>
+                        <li><a href="#">Значимость</a></li>
+                        <li><a href="#">Равным</a></li>
+                        <li><a href="#">Товарищи</a></li>
+                        <li><a href="#">Идейные</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <div class="opened-menu" onclick="toggleMenu(this)">
+                        <h4>Контакты</h4>
+                        <i class="caret-down-white"></i>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">office@ekb.golgames.ru</a></li>
+                        <li><a href="#">Напишите в WhatsApp</a></li>
+                        <li><a href="#">Напишите в Telegram</a></li>
+                        <li><a href="#">Напишите в VK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <div class="opened-menu" onclick="toggleMenu(this)">
+                        <h4>Документы</h4>
+                        <i class="caret-down-white"></i>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#">Политика конфиденциальности ПД</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Согласие на обработку ПД</a></li>
+                        <li><a href="#">Публичная оферта </a></li>
+                        <li><a href="#">Согласие на распространение ПД</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="site-info">
+                    <p>Сайт является информационным. Пожалуйста, играйте ответственно. 18+</p>
+                </div>
+                <div class="footer-paymnt G-align-center">
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/visa.png" alt="visa">
+                    </div>
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/mastercard.png" alt="mastercard">
+                    </div>
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/bitcoin.png" alt="bitcoin">
+                    </div>
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/tbank.png" alt="tbank">
+                    </div>
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/skrill.png" alt="skrill">
+                    </div>
+                    <div class="footer-logo G-center">
+                        <img src="./assets/img/neteller.png" alt="neteller">
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-</main>
+        <div class="copyright G-center">
+            <p>Сopyright 2026</p>
+        </div>
+    </div>
+</footer>
 
 
 <script src="./assets/js/jquery-3.6.4.js"></script>

@@ -617,15 +617,15 @@ P {
     background: rgba(24, 24, 56, 1);
 }
 
-.section-table thead  td:first-child{
+.section-table thead  th:first-child{
     border-radius: 16px 0 0 0;
     width: 299px;
     border-left: unset;
 }
-.section-table thead  td:last-child{
+.section-table thead  th:last-child{
     border-radius: 0 16px 0 0;
 }
-.section-table thead  td{
+.section-table thead  th{
     padding: 35px 30px;
     background: rgba(72, 72, 99, 1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -843,10 +843,10 @@ footer{
     .section-table tbody td {
         padding: 18px 20px;
     }
-    .section-table thead td {
+    .section-table thead th {
         padding: 20px 20px;
     }
-    .section-table thead td:first-child {
+    .section-table thead th:first-child {
         width: 230px;
     }
     .section-title {
@@ -1176,7 +1176,7 @@ footer{
         max-width: 400px;
         margin: 0 auto;
     }
-    .section-table thead td:first-child {
+    .section-table thead th:first-child {
         width: 189px;
     }
     .section-table thead h3 {
@@ -1271,10 +1271,10 @@ footer{
     .section-table thead h3 {
         font-size: 14px;
     }
-    .section-table thead td:first-child {
+    .section-table thead th:first-child {
         width: 130px;
     }
-    .section-table thead td {
+    .section-table thead th {
         padding: 20px 3px;
     }
     .section-table table {

@@ -111,8 +111,9 @@ header{
 .click-open-lang .lang-current:after{
     transform: rotate(-180deg);
 }
-.lang-current img{
+.lang-current img {
     width: 16px;
+    margin-top: -1px;
 }
 .lang-dropdown{
     position: absolute;
