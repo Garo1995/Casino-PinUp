@@ -113,7 +113,7 @@ header{
 }
 .lang-current img {
     width: 16px;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 .lang-dropdown{
     position: absolute;
@@ -177,6 +177,7 @@ header{
     border: 1px solid #FFFFFF0F;
     border-radius: 8px;
     padding: 6px;
+    background: unset;
 }
 .open-menu span {
     width: 100%;
