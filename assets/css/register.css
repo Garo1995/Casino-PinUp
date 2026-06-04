@@ -287,8 +287,19 @@
 
 }
 
-
-
+.step-inp-phone{
+    position: relative;
+}
+.step-inp-flag{
+    position: absolute;
+    width: 14px;
+    display: flex;
+    top: 7px;
+    left: 8px;
+}
+.step-inp-phone input {
+    padding: 5px 10px 5px 30px;
+}
 
 
 

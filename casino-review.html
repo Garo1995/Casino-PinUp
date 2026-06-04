@@ -15,7 +15,7 @@
         <div class="header-main G-align-center G-justify-between">
             <a href="#" class="logo G-flex"><img src="./assets/img/logo.svg" alt="logo"></a>
             <div class="menu-mobile">
-                <div class="header-menu">
+                <nav class="header-menu" aria-label="Главное меню">
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Обзор</a></li>
@@ -24,7 +24,7 @@
                         <li><a href="#">Приложение</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="leng-mobile">
                     <div class="leng-mobile-name">
                         <img src="./assets/img/ru.png" alt="ru"> RU
@@ -49,8 +49,7 @@
 
 
             <div class="header-btn G-align-center">
-                <button class="btn-href game-now-mob">Играть сейчас</button>
-
+                <a href="#" class="btn-href game-now-mob">Играть сейчас</a>
                 <div class="header-lang">
                     <div class="lang-current">
                         <img src="./assets/img/ru.png" alt="ru"> RU
@@ -58,42 +57,41 @@
                     <div class="lang-dropdown">
                         <ul>
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/en/" hreflang="en" class="header-lang-item">
                                     <img src="./assets/img/en.png" alt="en"> EN
-                                </div>
+                                </a>
                             </li>
-
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/az/" hreflang="az" class="header-lang-item">
                                     <img src="./assets/img/az.png" alt="az"> AZ
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/tr/" hreflang="tr" class="header-lang-item">
                                     <img src="./assets/img/tr.png" alt="tr"> TR
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/uz/" hreflang="uz" class="header-lang-item">
                                     <img src="./assets/img/uz.png" alt="uz"> UZ
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/pt/" hreflang="pt" class="header-lang-item">
                                     <img src="./assets/img/pt.png" alt="pt"> PT
-                                </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="header-lang-item">
+                                <a href="/es/" hreflang="es" class="header-lang-item">
                                     <img src="./assets/img/es.png" alt="es"> ES
-                                </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="btn-for-desktop G-align-center">
-                    <button class="btn-login">Войти</button>
-                    <button class="btn-href">Зарегистрироваться</button>
+                    <a href="#" class="btn-login">Войти</a>
+                    <a href="#" class="btn-href">Зарегистрироваться</a>
                 </div>
                 <div class="open-menu">
                     <span></span>
@@ -106,640 +104,655 @@
         </div>
     </div>
 </header>
+<main>
 
-<section class="review-main">
-    <div class="review-fon G-flex">
-        <img src="./assets/img/review2.png" class="review-fon-desc" alt="Казино Pin-UP">
-        <img src="./assets/img/review-mob.png" class="review-fon-mob" alt="Казино Pin-UP">
-        <img src="./assets/img/review-mob-phone.png" class="review-mob-phone" alt="Казино Pin-UP">
-    </div>
-    <div class="container">
-        <div class="review-flex G-align-end">
-            <div class="review-info">
-                <h1>Казино Pin-UP </h1>
-                <p>
-                    С другой стороны новая модель организационной деятельности в значительной степени обуславливает создание направлений деятельности
-                </p>
-                <div class="pin-casino-btn G-align-center">
-                    <button class="btn">Играть сейчас</button>
-                    <button class="btn-liner">Получить бонус</button>
-                </div>
-                <div class="review-names">
-                    <ul>
-                        <li><span class="review-circle"></span> Год основания</li>
-                        <li><span class="review-circle"></span> Лицензия</li>
-                        <li><span class="review-circle"></span> 6 языков</li>
-                        <li><span class="review-circle"></span> Валюты</li>
-                        <li><span class="review-circle"></span> Приложение</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="review-counts">
-                <div class="rating-wrap G-align-center">
-                    <div class="stars">
-                        <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c1">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c1)"></path>
-                        </svg>
-                        <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c2">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c2)"></path>
-                        </svg>
-                        <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c3">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c3)"></path>
-                        </svg>
-                        <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c4">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c4)"></path>
-                        </svg>
-                        <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c5">
-                                    <rect x="0" y="0" width="39.99999999999999" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c5)"></path>
-                        </svg>
-                    </div>
-                    <div class="score-display G-align-center">
-                        <span class="score">4.8</span>
-                        <p>/5</p>
-                    </div>
-                    <div class="rating-count G-align-end">
-                        <strong>1599</strong> <span>отзывов</span>
-                    </div>
-                </div>
-                <div class="rating-pinco G-flex">
-                    <img src="./assets/img/pinco-log.png" alt="pinco">
-                </div>
-            </div>
+    <section class="review-main">
+        <div class="review-fon G-flex">
+            <img src="./assets/img/review2.png" class="review-fon-desc" alt="Казино Pin-UP">
+            <img src="./assets/img/review-mob.png" class="review-fon-mob" alt="Казино Pin-UP">
+            <img src="./assets/img/review-mob-phone.png" class="review-mob-phone" alt="Казино Pin-UP">
         </div>
-
-    </div>
-</section>
-
-<section class="margin-blocks">
-    <div class="container">
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#">Общее</a></li>
-                <li><a href="#">Бонусы</a></li>
-                <li><a href="#">Игры</a></li>
-                <li><a href="#">Приложение</a></li>
-                <li><a href="#">Выплаты</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Итог</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="license-security-main margin-blocks">
-    <div class="container">
-        <h2>Лицензия и безопасность</h2>
-        <div class="license-security-scr">
-
-            <div class="swiper license-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="license-security-box">
-                            <div class="license-security-photo G-justify-center">
-                                <img src="./assets/img/license-security.png" alt="security">
-                            </div>
-                            <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+        <div class="container">
+            <div class="review-flex G-align-end">
+                <div class="review-info">
+                    <h1>Казино Pin-UP </h1>
+                    <p>
+                        С другой стороны новая модель организационной деятельности в значительной степени обуславливает
+                        создание направлений деятельности
+                    </p>
+                    <div class="pin-casino-btn G-align-center">
+                        <a href="#" class="btn">Играть сейчас</a>
+                        <a href="#" class="btn-liner">Получить бонус</a>
+                    </div>
+                    <div class="review-names">
+                        <ul>
+                            <li><span class="review-circle"></span> Год основания</li>
+                            <li><span class="review-circle"></span> Лицензия</li>
+                            <li><span class="review-circle"></span> 6 языков</li>
+                            <li><span class="review-circle"></span> Валюты</li>
+                            <li><span class="review-circle"></span> Приложение</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="review-counts">
+                    <div class="rating-wrap G-align-center">
+                        <div class="stars">
+                            <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c1">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c1)"></path>
+                            </svg>
+                            <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c2">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c2)"></path>
+                            </svg>
+                            <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c3">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c3)"></path>
+                            </svg>
+                            <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c4">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c4)"></path>
+                            </svg>
+                            <svg width="48" height="48" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c5">
+                                        <rect x="0" y="0" width="39.99999999999999" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c5)"></path>
+                            </svg>
                         </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="license-security-box">
-                            <div class="license-security-photo G-justify-center">
-                                <img src="./assets/img/license-security.png" alt="security">
-                            </div>
-                            <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="license-security-box">
-                            <div class="license-security-photo G-justify-center">
-                                <img src="./assets/img/license-security.png" alt="security">
-                            </div>
-                            <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="license-security-box">
-                            <div class="license-security-photo G-justify-center">
-                                <img src="./assets/img/license-security.png" alt="security">
-                            </div>
-                            <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="license-security-flex G-flex">
-            <div class="license-security-logo G-center">
-                <img src="./assets/img/gam-stop.png" alt="">
-            </div>
-            <div class="license-security-logo G-center">
-                <img src="./assets/img/gamble.png" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="margin-blocks">
-    <div class="container">
-        <h2>Бонусы</h2>
-        <div class="bonuses-table G-flex-column">
-            <div class="bonuses-boxes G-align-center">
-                <div class="bonuses-gif G-align-center">
-                    <img src="./assets/img/gift.png" alt="gift">
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Размер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вейджер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                </div>
-            </div>
-            <div class="bonuses-boxes G-align-center">
-                <div class="bonuses-gif G-align-center">
-                    <img src="./assets/img/gift.png" alt="gift">
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Размер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вейджер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                </div>
-            </div>
-            <div class="bonuses-boxes G-align-center">
-                <div class="bonuses-gif G-align-center">
-                    <img src="./assets/img/gift.png" alt="gift">
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Размер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вейджер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                </div>
-            </div>
-            <div class="bonuses-boxes G-align-center">
-                <div class="bonuses-gif G-align-center">
-                    <img src="./assets/img/gift.png" alt="gift">
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Размер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вейджер</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="G-justify-end">
-            <a href="#" class="href-arrow">
-                <span>Bonuses</span>
-                <div class="circle-arrow">
-                    <i class="circle-icon"></i>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="games-block-main margin-blocks">
-    <div class="container">
-        <h2>Игры</h2>
-        <div class="games-block G-flex-wrap">
-            <div class="games-boxes" style="background-image: url('./assets/img/cards-fon1.png')">
-                <img src="./assets/img/slots-1.png" alt="">
-                <h4>Слоты</h4>
-            </div>
-            <div class="games-boxes" style="background-image: url('./assets/img/cards-fon2.png')">
-                <img src="./assets/img/slots-2.png" alt="">
-                <h4>Live Casino</h4>
-            </div>
-            <div class="games-boxes" style="background-image: url('./assets/img/cards-fon3.png')">
-                <img src="./assets/img/slots-3.png" alt="">
-                <h4>Ставки на спорт</h4>
-            </div>
-            <div class="games-boxes" style="background-image: url('./assets/img/cards-fon4.png')">
-                <img src="./assets/img/vert.png" alt="">
-                <h4>Краш-игры</h4>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="payment-main margin-blocks">
-    <div class="container">
-        <h2>Платёжные методы</h2>
-        <div class="payment-methods G-flex-column">
-            <div class="payment-methods-boxes G-align-center">
-                <div class="payment-type G-center">
-                    <strong class="bonuses-count">01</strong>
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>депозит (мин.)</span>
-                    <i class="icon-deposit"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вывод</span>
-                    <i class="icon-time"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                    <i class="icon-data"></i>
-                </div>
-            </div>
-            <div class="payment-methods-boxes G-align-center">
-                <div class="payment-type G-center">
-                    <strong class="bonuses-count">02</strong>
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>депозит (мин.)</span>
-                    <i class="icon-deposit"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вывод</span>
-                    <i class="icon-time"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                    <i class="icon-data"></i>
-                </div>
-            </div>
-            <div class="payment-methods-boxes G-align-center">
-                <div class="payment-type G-center">
-                    <strong class="bonuses-count">03</strong>
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>депозит (мин.)</span>
-                    <i class="icon-deposit"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вывод</span>
-                    <i class="icon-time"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                    <i class="icon-data"></i>
-                </div>
-            </div>
-            <div class="payment-methods-boxes G-align-center">
-                <div class="payment-type G-center">
-                    <strong class="bonuses-count">04</strong>
-                    <span>Тип</span>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>депозит (мин.)</span>
-                    <i class="icon-deposit"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Вывод</span>
-                    <i class="icon-time"></i>
-                </div>
-                <div class="bonuses-bus G-center">
-                    <span>Срок</span>
-                    <i class="icon-data"></i>
-                </div>
-            </div>
-        </div>
-        <div class="methods-logos G-flex-wrap">
-            <div class="methods-logo G-center">
-                <img src="./assets/img/logo-bitcoinx.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/logo-etherium.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/logo-zelle.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Cash-App-Logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/ripple-logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Monero-Logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Venmo-Logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Dogecoin-Logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Visa-logo.png" alt="">
-            </div>
-            <div class="methods-logo G-center">
-                <img src="./assets/img/Mastercard-logo.png" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="should-forgotten margin-blocks">
-    <div class="container">
-        <div class="should-forgotten-flex G-flex">
-            <div class="should-left">
-                <ul>
-                    <li>
-                        <i class="icon-check"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                </ul>
-            </div>
-            <div class="should-rigth">
-                <ul>
-                    <li>
-                        <i class="icon-check-red"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check-red"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check-red"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check-red"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-                    <li>
-                        <i class="icon-check-red"></i>
-                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. 
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="stakeholders-fon margin-blocks">
-    <div class="container">
-        <div class="stakeholders-flex G-align-center">
-            <div class="stakeholders-info G-flex-column G-align-start">
-                <p>
-                    Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные задания по разработке новых предложений. Таким образом консультация с широким активом в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна,
-                </p>
-                <button class="btn">Открыть счет</button>
-            </div>
-            <div class="stakehol-cnt">
-                <div class="stakehol-rewiev G-flex-column G-align-center">
-                    <div class="stakehol-pinco G-align-center">
                         <div class="score-display G-align-center">
                             <span class="score">4.8</span>
                             <p>/5</p>
                         </div>
-                        <img src="./assets/img/logo-pinco.png" alt="">
+                        <div class="rating-count G-align-end">
+                            <strong>1599</strong> <span>отзывов</span>
+                        </div>
                     </div>
-                    <div class="stars">
-                        <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c1">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c1)"></path>
-                        </svg>
-                        <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c2">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c2)"></path>
-                        </svg>
-                        <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c3">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c3)"></path>
-                        </svg>
-                        <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c4">
-                                    <rect x="0" y="0" width="50" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c4)"></path>
-                        </svg>
-                        <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <clipPath id="c5">
-                                    <rect x="0" y="0" width="39.99999999999999" height="50"></rect>
-                                </clipPath>
-                            </defs>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#2e3260"></path>
-                            <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
-                                  fill="#FFD700" clip-path="url(#c5)"></path>
-                        </svg>
+                    <div class="rating-pinco G-flex">
+                        <img src="./assets/img/pinco-log.png" alt="pinco">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="margin-blocks">
+        <div class="container">
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Общее</a></li>
+                    <li><a href="#">Бонусы</a></li>
+                    <li><a href="#">Игры</a></li>
+                    <li><a href="#">Приложение</a></li>
+                    <li><a href="#">Выплаты</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="#">Итог</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="license-security-main margin-blocks">
+        <div class="container">
+            <h2>Лицензия и безопасность</h2>
+            <div class="license-security-scr">
+
+                <div class="swiper license-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="license-security-box">
+                                <div class="license-security-photo G-justify-center">
+                                    <img src="./assets/img/license-security.png" alt="security">
+                                </div>
+                                <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                    участие в формировании новых предложений.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="license-security-box">
+                                <div class="license-security-photo G-justify-center">
+                                    <img src="./assets/img/license-security.png" alt="security">
+                                </div>
+                                <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                    участие в формировании новых предложений.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="license-security-box">
+                                <div class="license-security-photo G-justify-center">
+                                    <img src="./assets/img/license-security.png" alt="security">
+                                </div>
+                                <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                    участие в формировании новых предложений.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="license-security-box">
+                                <div class="license-security-photo G-justify-center">
+                                    <img src="./assets/img/license-security.png" alt="security">
+                                </div>
+                                <p>Товарищи! рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                    участие в формировании новых предложений.</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="stakehol-img G-flex">
-                    <img src="./assets/img/stakehol.png" alt="">
+            </div>
+
+            <div class="license-security-flex G-flex">
+                <div class="license-security-logo G-center">
+                    <img src="./assets/img/gam-stop.png" alt="">
+                </div>
+                <div class="license-security-logo G-center">
+                    <img src="./assets/img/gamble.png" alt="">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<footer class="section-margin">
-    <div class="container">
-        <div class="footer-main G-align-start G-justify-between">
-            <div class="footer-head G-flex-column G-align-start">
-                <a href="#" class="G-flex"><img src="./assets/img/logo.svg" alt="logo"></a>
-                <p>
-                    Задача организации, в особенности же постоянный
-                </p>
-                <div class="social-href G-align-center">
-                    <a href="#" target="_blank" class="href-icon">
-                        <img src="./assets/img/telegram.svg" alt="telegram">
-                    </a>
-                    <a href="#" target="_blank" class="href-icon">
-                        <img src="./assets/img/instagram.svg" alt="instagram">
-                    </a>
-                    <a href="#" target="_blank" class="href-icon">
-                        <img src="./assets/img/youtube.svg" alt="youtube">
-                    </a>
+    <section class="margin-blocks">
+        <div class="container">
+            <h2>Бонусы</h2>
+            <div class="bonuses-table G-flex-column">
+                <div class="bonuses-boxes G-align-center">
+                    <div class="bonuses-gif G-align-center">
+                        <img src="./assets/img/gift.png" alt="gift">
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Размер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вейджер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                    </div>
+                </div>
+                <div class="bonuses-boxes G-align-center">
+                    <div class="bonuses-gif G-align-center">
+                        <img src="./assets/img/gift.png" alt="gift">
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Размер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вейджер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                    </div>
+                </div>
+                <div class="bonuses-boxes G-align-center">
+                    <div class="bonuses-gif G-align-center">
+                        <img src="./assets/img/gift.png" alt="gift">
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Размер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вейджер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                    </div>
+                </div>
+                <div class="bonuses-boxes G-align-center">
+                    <div class="bonuses-gif G-align-center">
+                        <img src="./assets/img/gift.png" alt="gift">
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Размер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вейджер</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                    </div>
                 </div>
             </div>
-            <div class="footer-content G-align-start">
-                <div class="footer-menu">
-                    <div class="opened-menu" onclick="toggleMenu(this)">
-                        <h4>Навигация</h4>
-                        <i class="caret-down-white"></i>
+
+            <div class="G-justify-end">
+                <a href="#" class="href-arrow">
+                    <span>Bonuses</span>
+                    <div class="circle-arrow">
+                        <i class="circle-icon"></i>
                     </div>
-                    <ul class="menu-list">
-                        <li><a href="#">Идейные</a></li>
-                        <li><a href="#">Соображения</a></li>
-                        <li><a href="#">Значимость</a></li>
-                        <li><a href="#">Равным</a></li>
-                        <li><a href="#">Товарищи</a></li>
-                        <li><a href="#">Идейные</a></li>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="games-block-main margin-blocks">
+        <div class="container">
+            <h2>Игры</h2>
+            <div class="games-block G-flex-wrap">
+                <div class="games-boxes" style="background-image: url('./assets/img/cards-fon1.png')">
+                    <img src="./assets/img/slots-1.png" alt="">
+                    <h4>Слоты</h4>
+                </div>
+                <div class="games-boxes" style="background-image: url('./assets/img/cards-fon2.png')">
+                    <img src="./assets/img/slots-2.png" alt="">
+                    <h4>Live Casino</h4>
+                </div>
+                <div class="games-boxes" style="background-image: url('./assets/img/cards-fon3.png')">
+                    <img src="./assets/img/slots-3.png" alt="">
+                    <h4>Ставки на спорт</h4>
+                </div>
+                <div class="games-boxes" style="background-image: url('./assets/img/cards-fon4.png')">
+                    <img src="./assets/img/vert.png" alt="">
+                    <h4>Краш-игры</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payment-main margin-blocks">
+        <div class="container">
+            <h2>Платёжные методы</h2>
+            <div class="payment-methods G-flex-column">
+                <div class="payment-methods-boxes G-align-center">
+                    <div class="payment-type G-center">
+                        <strong class="bonuses-count">01</strong>
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>депозит (мин.)</span>
+                        <i class="icon-deposit"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вывод</span>
+                        <i class="icon-time"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                        <i class="icon-data"></i>
+                    </div>
+                </div>
+                <div class="payment-methods-boxes G-align-center">
+                    <div class="payment-type G-center">
+                        <strong class="bonuses-count">02</strong>
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>депозит (мин.)</span>
+                        <i class="icon-deposit"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вывод</span>
+                        <i class="icon-time"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                        <i class="icon-data"></i>
+                    </div>
+                </div>
+                <div class="payment-methods-boxes G-align-center">
+                    <div class="payment-type G-center">
+                        <strong class="bonuses-count">03</strong>
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>депозит (мин.)</span>
+                        <i class="icon-deposit"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вывод</span>
+                        <i class="icon-time"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                        <i class="icon-data"></i>
+                    </div>
+                </div>
+                <div class="payment-methods-boxes G-align-center">
+                    <div class="payment-type G-center">
+                        <strong class="bonuses-count">04</strong>
+                        <span>Тип</span>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>депозит (мин.)</span>
+                        <i class="icon-deposit"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Вывод</span>
+                        <i class="icon-time"></i>
+                    </div>
+                    <div class="bonuses-bus G-center">
+                        <span>Срок</span>
+                        <i class="icon-data"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="methods-logos G-flex-wrap">
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/logo-bitcoinx.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/logo-etherium.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/logo-zelle.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Cash-App-Logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/ripple-logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Monero-Logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Venmo-Logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Dogecoin-Logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Visa-logo.png" alt="">
+                </div>
+                <div class="methods-logo G-center">
+                    <img src="./assets/img/Mastercard-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="should-forgotten margin-blocks">
+        <div class="container">
+            <div class="should-forgotten-flex G-flex">
+                <div class="should-left">
+                    <ul>
+                        <li>
+                            <i class="icon-check"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-menu">
-                    <div class="opened-menu" onclick="toggleMenu(this)">
-                        <h4>Контакты</h4>
-                        <i class="caret-down-white"></i>
-                    </div>
-                    <ul class="menu-list">
-                        <li><a href="#">office@ekb.golgames.ru</a></li>
-                        <li><a href="#">Напишите в WhatsApp</a></li>
-                        <li><a href="#">Напишите в Telegram</a></li>
-                        <li><a href="#">Напишите в VK</a></li>
-                    </ul>
-                </div>
-                <div class="footer-menu">
-                    <div class="opened-menu" onclick="toggleMenu(this)">
-                        <h4>Документы</h4>
-                        <i class="caret-down-white"></i>
-                    </div>
-                    <ul class="menu-list">
-                        <li><a href="#">Политика конфиденциальности ПД</a></li>
-                        <li><a href="#">Пользовательское соглашение</a></li>
-                        <li><a href="#">Согласие на обработку ПД</a></li>
-                        <li><a href="#">Публичная оферта </a></li>
-                        <li><a href="#">Согласие на распространение ПД</a></li>
+                <div class="should-rigth">
+                    <ul>
+                        <li>
+                            <i class="icon-check-red"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check-red"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check-red"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check-red"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+                        <li>
+                            <i class="icon-check-red"></i>
+                            Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                            задания по разработке новых предложений. 
+                        </li>
+
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="footer-info">
-                <div class="site-info">
-                    <p>Сайт является информационным. Пожалуйста, играйте ответственно. 18+</p>
+    <section class="stakeholders-fon margin-blocks">
+        <div class="container">
+            <div class="stakeholders-flex G-align-center">
+                <div class="stakeholders-info G-flex-column G-align-start">
+                    <p>
+                        Не следует, однако забывать, что консультация с широким активом позволяет выполнять важные
+                        задания по разработке новых предложений. Таким образом консультация с широким активом в
+                        значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих
+                        проблем настолько очевидна,
+                    </p>
+                    <a href="#" class="btn">Открыть счет</a>
                 </div>
-                <div class="footer-paymnt G-align-center">
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/visa.png" alt="visa">
+                <div class="stakehol-cnt">
+                    <div class="stakehol-rewiev G-flex-column G-align-center">
+                        <div class="stakehol-pinco G-align-center">
+                            <div class="score-display G-align-center">
+                                <span class="score">4.8</span>
+                                <p>/5</p>
+                            </div>
+                            <img src="./assets/img/logo-pinco.png" alt="">
+                        </div>
+                        <div class="stars">
+                            <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c6">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c1)"></path>
+                            </svg>
+                            <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c7">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c2)"></path>
+                            </svg>
+                            <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c8">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c3)"></path>
+                            </svg>
+                            <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c9">
+                                        <rect x="0" y="0" width="50" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c4)"></path>
+                            </svg>
+                            <svg width="110" height="110" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="c10">
+                                        <rect x="0" y="0" width="39.99999999999999" height="50"></rect>
+                                    </clipPath>
+                                </defs>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#2e3260"></path>
+                                <path d="M32.8843 16.1407L27.839 5.9188C27.3031 4.83442 26.2187 4.15942 25.0093 4.15942C23.8 4.15942 22.714 4.83442 22.1781 5.9188L17.1109 16.1579L5.82964 17.7969C4.6312 17.9704 3.65464 18.7938 3.2812 19.9454C2.9062 21.0954 3.21245 22.336 4.07964 23.1813L12.2515 31.1657L10.325 42.4016C10.1203 43.5938 10.6015 44.7782 11.5796 45.4891C12.1328 45.8907 12.7796 46.0954 13.4312 46.0954C13.9328 46.0954 14.4375 45.9735 14.9031 45.7297L25.0234 40.425L35.114 45.7297C36.1859 46.2922 37.4593 46.2016 38.4375 45.4891C39.4156 44.7782 39.8984 43.5954 39.6937 42.4016L37.775 31.1391L45.939 23.1813C46.8062 22.336 47.1109 21.0969 46.7374 19.9454C46.364 18.7938 45.3875 17.9704 44.189 17.7969L32.9078 16.1579L32.8843 16.1407Z"
+                                      fill="#FFD700" clip-path="url(#c5)"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/mastercard.png" alt="mastercard">
-                    </div>
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/bitcoin.png" alt="bitcoin">
-                    </div>
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/tbank.png" alt="tbank">
-                    </div>
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/skrill.png" alt="skrill">
-                    </div>
-                    <div class="footer-logo G-center">
-                        <img src="./assets/img/neteller.png" alt="neteller">
+
+                    <div class="stakehol-img G-flex">
+                        <img src="./assets/img/stakehol.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright G-center">
-            <p>Сopyright 2026</p>
+    </section>
+
+    <footer class="section-margin">
+        <div class="container">
+            <div class="footer-main G-align-start G-justify-between">
+                <div class="footer-head G-flex-column G-align-start">
+                    <a href="#" class="G-flex"><img src="./assets/img/logo.svg" alt="logo"></a>
+                    <p>
+                        Задача организации, в особенности же постоянный
+                    </p>
+                    <div class="social-href G-align-center">
+                        <a href="#" target="_blank" class="href-icon">
+                            <img src="./assets/img/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="#" target="_blank" class="href-icon">
+                            <img src="./assets/img/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="#" target="_blank" class="href-icon">
+                            <img src="./assets/img/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-content G-align-start">
+                    <div class="footer-menu">
+                        <div class="opened-menu" onclick="toggleMenu(this)">
+                            <h4>Навигация</h4>
+                            <i class="caret-down-white"></i>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="#">Идейные</a></li>
+                            <li><a href="#">Соображения</a></li>
+                            <li><a href="#">Значимость</a></li>
+                            <li><a href="#">Равным</a></li>
+                            <li><a href="#">Товарищи</a></li>
+                            <li><a href="#">Идейные</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="opened-menu" onclick="toggleMenu(this)">
+                            <h4>Контакты</h4>
+                            <i class="caret-down-white"></i>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="#">office@ekb.golgames.ru</a></li>
+                            <li><a href="#">Напишите в WhatsApp</a></li>
+                            <li><a href="#">Напишите в Telegram</a></li>
+                            <li><a href="#">Напишите в VK</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="opened-menu" onclick="toggleMenu(this)">
+                            <h4>Документы</h4>
+                            <i class="caret-down-white"></i>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="#">Политика конфиденциальности ПД</a></li>
+                            <li><a href="#">Пользовательское соглашение</a></li>
+                            <li><a href="#">Согласие на обработку ПД</a></li>
+                            <li><a href="#">Публичная оферта </a></li>
+                            <li><a href="#">Согласие на распространение ПД</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-info">
+                    <div class="site-info">
+                        <p>Сайт является информационным. Пожалуйста, играйте ответственно. 18+</p>
+                    </div>
+                    <div class="footer-paymnt G-align-center">
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/visa.png" alt="visa">
+                        </div>
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/mastercard.png" alt="mastercard">
+                        </div>
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/bitcoin.png" alt="bitcoin">
+                        </div>
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/tbank.png" alt="tbank">
+                        </div>
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/skrill.png" alt="skrill">
+                        </div>
+                        <div class="footer-logo G-center">
+                            <img src="./assets/img/neteller.png" alt="neteller">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright G-center">
+                <p>Сopyright 2026</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</main>
 
 
 <script src="./assets/js/jquery-3.6.4.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/script.js"></script>
 
